@@ -1,0 +1,244 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+html{
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+}
+
+
+.header {
+    width: 100%;
+    background: #F7EBFF;
+    position: relative;
+
+}
+
+
+
+.nav{
+    z-index: 2;
+}
+.icon{
+    display: none;
+    z-index: 111;
+}
+
+.icon .open,
+.icon .close{
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+    cursor: pointer;
+    
+}
+
+.sec {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background:  #F7EBFF;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    list-style: none;
+}
+
+.list li a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #535057 ;
+    letter-spacing: 0.12em;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.list li a:hover{
+    background: #00C8A1;
+    color: #e7e7e7;
+}
+
+.srch {
+    position: relative;
+    
+}
+
+.srch input {
+    
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-align: center;
+    margin: 10px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.srch input:hover{
+    background: #00C8A1;
+    color: #e7e7e7;
+}
+
+
+.education{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: #D9816B;
+}
+
+.heading h2{
+    padding: 10px 0;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 500;
+    letter-spacing: 5px;
+    color: #fff;
+    
+    
+}
+
+.boxes{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 3px solid rgb(65, 57, 57);
+    border-radius: 10px;
+    gap: 10px;
+    width: 35%;
+    height: 40vh;
+    margin: 10px;
+    background: #E3E0F3;
+    
+    
+}
+
+.box1{
+    
+    background-color: #E3E0F3;
+    color: #3B3B3B;
+}
+.box1:hover{
+    color: #E3E0F3;
+    background-color: #3B3B3B;
+}
+
+.box1-h{
+    font-size: 1.1em;
+    text-align: center;
+    
+}
+
+.box1 p{
+    
+    font-size: 1em;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+@media screen and (max-width:1000px){
+    .header{
+        position: relative;
+        
+
+    }
+    
+
+      
+    .sec{
+        position: relative;
+    }
+
+    .nav{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translateX(100%);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: none;
+        transition: all 0.5s linear;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+        background: white;
+
+    }
+
+    .list{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon{
+        display: block;
+    }
+    .icon .close{
+        display: none;
+    }
+
+    .active .nav{
+        transform: translateX(0%);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .active .icon .open{
+        display: none;
+    }
+    .active .icon .close{
+        display: block;
+    }
+
+}
+
+
+
+ @media  screen and (max-width: 670px){
+    .box1{
+        width: 70%;
+        height: 20vh;
+    }
+    .heading h2{
+        font-size: 1.1em;
+    }
+
+    .box1-h{
+        font-size: 0.60em;
+    }
+
+    .box1 p{
+        font-size: 0.60em;
+    }
+
+}

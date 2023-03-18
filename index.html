@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    
+        <div class="header">
+
+            <div class="sec">
+                <div class="logo">
+                    <img src="logo.png" alt="">
+                </div>
+                <div class="nav">
+                    <div class="list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="flex.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </div>
+
+
+                </div>
+                <div class="icon" id="btn">
+                    <ion-icon name="grid-outline" class="open"></ion-icon>
+                    <ion-icon name="close-circle-outline" class="close"></ion-icon>
+                </div>
+            </div>
+        </div>
+
+
+
+        <section class="cont">
+
+            <div class="first">
+
+                <div class="profpic">
+                    <img src="bg6.png" alt="">
+                </div>
+
+                <div class="abt">
+                    <h2>Mirza Rashed Baig <br><span class="pro">Web Developer</span></h2>
+                    <p class="info-abt">Hello.... Welcome to My Portfolio </p> <br>
+                    <p>
+
+                        My Name is mirza rashed baig i had completed my degree from rupeted University (Gulbarga
+                        University) of Kalaburgi Karnataka after then i done front - end Developer course from I Hub
+                        Talent Institute Hyderabad and Ceftied completion of Course in React Js, I hope That my skills
+                        are usefull for organisation Thank You.
+                    </p>
+
+
+
+                </div>
+            </div>
+
+            <div class="second">
+
+                <div class="head-2">
+                    <h2>Skills </h2>
+                </div>
+                <div class="skils">
+                    <button>HTML</button>
+                    <button>CSS</button>
+                    <button>JAVASCRIPT</button>
+                    <button>REACT JS</button>
+                </div>
+            </div>
+
+
+        </section>
+    
+
+
+    <!-- ________________________Next Page_________________________________ -->
+
+    
+
+    <!-- _________________________________________Next Page___________________________________________ -->
+
+
+   
+    <script>
+
+        const sec = document.querySelector(".sec");
+        const btn = document.querySelector("#btn");
+
+
+        btn.addEventListener('click', ()=>{
+            sec.classList.toggle("active");
+        })
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

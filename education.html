@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div class="header">
+
+        <div class="sec">
+            <div class="logo">
+                <img src="logo.png" alt="">
+            </div>
+            <div class="nav">
+                <div class="list">
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="flex.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </div>
+
+
+            </div>
+            <div class="icon" id="btn">
+                <ion-icon name="grid-outline" class="open"></ion-icon>
+                <ion-icon name="close-circle-outline" class="close"></ion-icon>
+            </div>
+        </div>
+    </div>
+    
+    <div class="education">
+        <div class="heading">
+            <h2><u>Education</u></h2>
+        </div>
+
+        <div class="boxes">
+            <div class="box1">
+                <div class="box1-h">
+                    <h2> SSC </h2>
+                </div>
+                <p>From AL-Ameen Higher Primary School Chitguppa</p>
+                <p>Year 2000-2011</p>
+            </div>
+
+            <div class="box1">
+                <div class="box1-h">
+                    <h2>Intermediat PUC Sceince </h2>
+                </div>
+                <p>From Norma Frendrcih College Bidar</p>
+                <p>Year 2011-2016</p>
+            </div>
+
+
+            <div class="box1">
+                <div class="box1-h">
+                    <h2>Bachelor of Computer Application</h2>
+                </div>
+                <p>From Gulbarga University </p>
+                <p>Year 2016-2021</p>
+            </div>
+
+            <div class="box1">
+                <div class="box1-h">
+                    <h2> React JS Course </h2>
+                </div>
+                <p>From I Hub Talent Institute Hyderabad Ameerpet</p>
+                <p>Year 2022</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        const sec = document.querySelector(".sec");
+        const btn = document.querySelector("#btn");
+
+
+        btn.addEventListener('click', ()=>{
+            sec.classList.toggle("active");
+        })
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

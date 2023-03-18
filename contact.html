@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="header">
+
+            <div class="sec">
+                <div class="logo">
+                    <img src="logo.png" alt="">
+                </div>
+                <div class="nav">
+                    <div class="list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="flex.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </div>
+
+
+                </div>
+                <div class="icon" id="btn">
+                    <ion-icon name="grid-outline" class="open"></ion-icon>
+                    <ion-icon name="close-circle-outline" class="close"></ion-icon>
+                </div>
+            </div>
+        </div>
+
+    <div class="container">
+
+        <div class="parentc">
+
+            <div class="formvalues">
+                <form action="">
+                    <h2>Contact Form</h2>
+                    <div class="inputbox">
+                        <input type="text" required>
+                        <label for="Name">Name:-</label>
+                        <ion-icon name="person-outline"></ion-icon>
+                    </div>
+                    <div class="inputbox">
+                        
+                        <input type="email" required>
+                        <label for="Email">Email:-</label>
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </div>
+                    <div class="inputbox">
+                        <input type="Phone" required>
+                        <label for="Phone">Mobile:-</label>
+                        <ion-icon name="call-outline"></ion-icon>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" required>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+
+        const sec = document.querySelector(".sec");
+        const btn = document.querySelector("#btn");
+
+
+        btn.addEventListener('click', ()=>{
+            sec.classList.toggle("active");
+        })
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
